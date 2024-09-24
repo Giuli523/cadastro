@@ -1,0 +1,224 @@
+nav{
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+position: relative; 
+margin: 0 15px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover{
+    color: #ff6347;
+}
+
+
+
+nav ul li .dropdown-content{
+    display: none; 
+    position: absolute; 
+    background-color: #333;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+    min-height: 160px;
+    padding: 0;
+}
+
+nav ul li .dropdown-content li{
+    margin: 0;
+}
+
+nav ul li .dropdown-content li a{
+    padding: 10px 15px;
+}
+
+nav ul li .dropdown-content li a:hover{
+    background-color: #575757; 
+}
+
+nav ul li:hover .dropdown-content{
+    display: block;
+}
+
+.slider 
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    max-width: 1100px; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    position: relative; 
+
+
+.slides{
+    display: flex; 
+    width: 100%; 
+}
+
+.slide{
+    width: 100%; 
+    flex-shrink: 0; 
+}
+
+.slide img{
+    width: 100%;
+    display:block; 
+}
+footer{
+    background-color: rgb(188, 185, 186); /* Cor de fundo da página */
+    color: black; /* Cor da fonte */
+    padding: 40px 0; /* (Sequência: cima, direita, baixo, esquerda) */
+    /* Padding:recuo da borda para dentro - Margin:recuo da borda para fora*/
+    font-family: Georgia, Times, 'Times New Roman', serif; /* Estilo da fonte */
+    unicode-bidi: normal;
+}
+
+/* O footer a seguir tem um "." e não é igual o de cima, por que ele tem class */
+.footer-content{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+align-items: center;
+}
+
+.footer-section{
+    flex-basis: 23%; /* Faz com que as seções ocupem 23% da largura, com espaço para margens */
+    margin-bottom: 20px;
+}
+
+.footer-section h4{ /* Estilo dos títulos */
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.footer-section p, .footer-section ul{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.footer-section ul{
+    list-style-type: none;
+}
+
+.footer-section ul li{
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover{
+    color: rgb(5, 6, 8);
+}
+
+.social-links a{
+    display: inline-block;
+    margin-right: 10px;
+    color: rgb(34, 12, 12);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover{
+    color: rgb(8, 18, 31);
+}
+.imagem-pequena {
+    width: 150px; 
+    height: auto;
+}
+
+.container-login {
+    
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  
+    margin:auto;
+    max-width: 400px;
+    text-align: center;
+    
+}
+h2 {
+   
+    color: #333;
+    text-align: center;
+}
+
+form {
+   margin-top: 30px;;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 0;
+
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #8b8b8b;
+    outline: none;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #878787;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+.error-message {
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+}
